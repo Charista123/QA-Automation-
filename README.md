@@ -15,6 +15,19 @@
 10. Buat folder bernama "stepDef" dan buat file yang berisi beberapa fungsi dengan skrip untuk menjalankan proses pengujian.
 11. Setelah selesai membuat folder, simpan file (Ctrl+S), dan kemudian bangun ulang proyek (Build -> Rebuild Project). Setelah dibangun ulang, proyek dapat dijalankan.
 
+## Test Case
+
+Pastikan skenario yang dibuat sudah benar. Pastikan juga skrip pada file stepDef sesuai dengan skenario yang dibuat di folder feature. Setelah itu, jalankan proyek di folder runner.
+
+| Module | Test case ID | Text case description | Expected result | Actual result | Status |                      |
+|----:|-------------------------------------|
+|  Login  | U_001 | Input username dan password yang valid | User berhasil login | User sukses login | Pass |
+|  Login  - email| U_002 | Input email tanpa @ | User gagal login email yang diinputkan tidak valid | menampilkan info eror pada kolom | Pass |
+|  Login - email | U_003 |  Input email tanpa domain (.com) | User gagal login email yang diinputkan tidak valid | menampilkan info eror pada kolom | Pass |
+|  Login - password | U_004 | Input password invalid | Menampilkan informasi error bahwa password yang dimasukkan tidak sesuai dengan email/username yang diinputkan | Informasi eror tampil pada display | Pass | 
+|  Login - username  | U_005 | Input username invalid | User gagal login, username belum terdaftar | Info eror akan di tampilkan di diplay user harus menginputkan username yang valid | Pass |
+
+
 ## Menjalankan Aplikasi
 
 Pastikan skenario yang dibuat sudah benar. Pastikan juga skrip pada file stepDef sesuai dengan skenario yang dibuat di folder feature. Setelah itu, jalankan proyek di folder runner.
