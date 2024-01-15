@@ -19,13 +19,13 @@
 
 Pastikan skenario yang dibuat sudah benar. Pastikan juga skrip pada file stepDef sesuai dengan skenario yang dibuat di folder feature. Setelah itu, jalankan proyek di folder runner.
 
-| Module | Test case ID | Text case description | Expected result | Actual result | Status |                      |
-|----:|-------------------------------------|
-|  Login  | U_001 | Input username dan password yang valid | User berhasil login | User sukses login | Pass |
-|  Login  - email| U_002 | Input email tanpa @ | User gagal login email yang diinputkan tidak valid | menampilkan info eror pada kolom | Pass |
-|  Login - email | U_003 |  Input email tanpa domain (.com) | User gagal login email yang diinputkan tidak valid | menampilkan info eror pada kolom | Pass |
-|  Login - password | U_004 | Input password invalid | Menampilkan informasi error bahwa password yang dimasukkan tidak sesuai dengan email/username yang diinputkan | Informasi eror tampil pada display | Pass | 
-|  Login - username  | U_005 | Input username invalid | User gagal login, username belum terdaftar | Info eror akan di tampilkan di diplay user harus menginputkan username yang valid | Pass |
+| Module | Test case ID | Test case description | Expected result | Actual result | Status |
+|--------|--------------|-----------------------|------------------|---------------|--------|
+| Login  | U_001        | Input username dan password yang valid | User berhasil login | User sukses login | Pass   |
+| Login - email | U_002 | Input email tanpa @ | User gagal login, email yang diinputkan tidak valid | Menampilkan info error pada kolom | Pass   |
+| Login - email | U_003 | Input email tanpa domain (.com) | User gagal login, email yang diinputkan tidak valid | Menampilkan info error pada kolom | Pass   |
+| Login - password | U_004 | Input password invalid | Menampilkan informasi error bahwa password yang dimasukkan tidak sesuai dengan email/username yang diinputkan | Informasi error tampil pada display | Pass |
+| Login - username | U_005 | Input username invalid | User gagal login, username belum terdaftar | Info error akan ditampilkan di display, user harus menginputkan username yang valid | Pass |
 
 
 ## Menjalankan Aplikasi
